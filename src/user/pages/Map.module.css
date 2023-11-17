@@ -1,0 +1,11 @@
+.appMap {
+  height: 60vh;
+  border-radius: 20px;
+  overflow: hidden;
+  /* margin: 40px 0; */
+}
+
+.appMap > div {
+  height: 100%;
+  width: 100%;
+}

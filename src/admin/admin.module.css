@@ -1,0 +1,21 @@
+:root {
+  --border: 10px;
+  --main-padding: 13px 12px 13px 12px;
+  --main-color: #f9dca6;
+}
+
+.outlet {
+  margin-left: 375px;
+  background-color: #ecf0f3;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 42px 30px;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 375px;
+}

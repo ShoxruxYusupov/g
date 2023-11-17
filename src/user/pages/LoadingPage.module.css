@@ -1,0 +1,92 @@
+.loading {
+  position: fixed;
+  background-color: #ecf0f3;
+  max-width: 450px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.loading h1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: h1 1s linear;
+  animation-delay: 0.5s;
+}
+
+.loading img {
+  opacity: 0;
+  animation: img 0.6s ease-in forwards;
+  animation-delay: 2s;
+  transform: translateX(20px);
+  width: 80px;
+  object-fit: cover;
+}
+
+.loading div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+}
+
+.loading .div1 {
+  background-color: #a3586d;
+  animation: divs 0.5s ease-in;
+  animation-delay: 1.3s;
+}
+.loading .div2 {
+  background-color: #5c4a72;
+  animation: divs 0.5s ease-in;
+  animation-delay: 1.4s;
+}
+.loading .div3 {
+  background-color: #f3b05a;
+  animation: divs 0.5s ease-in;
+  animation-delay: 1.5s;
+}
+.loading .div4 {
+  background-color: #f46a4e;
+  animation: divs 0.5s ease-in;
+  animation-delay: 1.6s;
+}
+
+@keyframes h1 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes divs {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes img {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

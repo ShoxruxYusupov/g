@@ -1,0 +1,75 @@
+.tabs {
+  overflow-x: scroll;
+  position: relative;
+  gap: 32px;
+  display: flex;
+  padding: 4% 16px;
+  align-items: flex-start;
+  min-height: 140px;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+
+.tabs button {
+  display: inline;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.tabs img {
+  width: 54px;
+  height: 54px;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  object-fit: cover;
+}
+
+.tabs button:disabled img {
+  border: 3px solid var(--main-color);
+}
+.tabs button:disabled p {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.title {
+  color: black;
+  font-size: medium;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px 20px;
+  padding: 70px 0 40px;
+}
+
+.content,
+button {
+  font-size: 15px;
+}
+
+.status {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(113, 113, 113);
+  border-bottom: 1px solid rgb(113, 113, 113);
+  font-size: 2.2rem;
+}

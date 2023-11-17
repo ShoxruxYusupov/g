@@ -1,0 +1,61 @@
+.review {
+  padding: 50px 55.5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+}
+
+.reviewCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  gap: 12px;
+  padding: 20px 0;
+}
+.fullName {
+  flex: 1;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+}
+
+.fullName span {
+  display: block;
+}
+
+.comment {
+  flex: 3;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  /* text-align: center; */
+}
+
+.date {
+  text-align: center;
+  flex: 1;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  font-weight: 400;
+  font-size: 23px;
+  padding: 20px 50px;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.status {
+  text-align: center;
+  width: 100%;
+  padding: 4% 0 1%;
+  color: rgb(113, 113, 113);
+  border-bottom: 1px solid rgb(113, 113, 113);
+  font-size: 2.2rem;
+}
